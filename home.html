@@ -10,6 +10,7 @@
       }
       #header {
         background-color: aliceblue;
+        width: 50%;
         border-color: aqua;
         display: flex;
         flex-direction: row;
@@ -17,25 +18,60 @@
         border-radius: 25px;
         padding: auto;
         margin: 10px;
+        list-style-type: none
 
         /* border-radius: 25px; */
+      }
+      #smalldiv{
+            background-color: aliceblue;
+            border-radius: 15;
+            margin: 30px;
+            padding: 30px;
       }
       #ullist {
         display: flex;
         flex-direction: row;
         justify-content: center;
       }
+      #main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      #navele{
+        padding: 10px;
+        margin: 6px;
+    
+      }
+      .navbox{
+/* background-color: silver; */
+margin: 20px;
+        border-radius: 50%
+      }
     </style>
   </head>
   <body>
-    <div id="header"><h1>HomePage</h1></div>
+    <div style="display: flex ; flex-direction: row;justify-content: center;" >
+            <ul id="header">
+              <div class="navbox" >  <li id="navele"><a href="fd">Home</a></li></div>
+              <div class="navbox">  <li id="navele"><a href="dg">Courses</a></li></div>
+                <div class="navbox"><li id="navele"><a href="e">Contact</a></li></div>
+            </ul>
+
+
+    </div>
     <div id="header"><h1>Menu</h1></div>
     <div id="ullist">
-      <ul>
+      <!-- <ul>
         <li>Home</li>
         <li>Courses</li>
         <li>Contact</li>
-      </ul>
+      </ul> -->
+    </div>
+    <div id="main">
+<div id="smalldiv">1</div>
+<div id="smalldiv">2</div>
+<div id="smalldiv">3</div>
     </div>
   </body>
 </html>
